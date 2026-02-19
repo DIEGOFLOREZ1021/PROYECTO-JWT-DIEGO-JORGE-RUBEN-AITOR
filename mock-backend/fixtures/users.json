@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Admin Demo",
+    "email": "admin@example.com",
+    "password_hash": "$2b$10$plmvPnSUD78XVxcbUkUv9OQUAMROJ1W3p.yh4dWarCkHgkxJI5GKa",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "name": "User Demo",
+    "email": "user@example.com",
+    "password_hash": "$2b$10$8Je3JEMusvbjxxvkhiR8/OSmZlkl1rXPksaSUWcd39jqoPMl2ZCsC",
+    "role": "user"
+  }
+]

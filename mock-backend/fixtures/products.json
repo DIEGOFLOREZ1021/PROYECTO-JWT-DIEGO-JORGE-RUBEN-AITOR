@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Básico",
+    "description": "Portátil para tareas básicas",
+    "price": 399.99
+  },
+  {
+    "id": 2,
+    "name": "Auriculares",
+    "description": "Auriculares inalámbricos",
+    "price": 59.9
+  },
+  {
+    "id": 3,
+    "name": "Teclado Mecánico",
+    "description": "Switches táctiles",
+    "price": 89.5
+  }
+]
