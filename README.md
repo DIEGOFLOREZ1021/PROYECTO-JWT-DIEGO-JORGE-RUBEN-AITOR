@@ -57,3 +57,30 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+
+Jorge
+
+##¿Qué es un HttpInterceptor?
+
+Un HttpInterceptor es un servicio en Angular que permite interceptar y manipular las solicitudes y respuestas HTTP antes de que lleguen al servidor o al código que las consume. Esto significa que puedes modificar cabeceras, manejar tokens de autenticación, registrar solicitudes o gestionar errores de manera centralizada.
+
+Punto del ciclo HTTP en que actúa
+
+El interceptor se ejecuta entre el momento en que un componente o servicio realiza una petición HTTP y el momento en que la respuesta llega de vuelta. Técnicamente, intercepta la petición antes de que se envíe al servidor y la respuesta antes de que llegue al consumidor del servicio. Esto permite aplicar transformaciones o lógica común sin tocar cada petición individual.
+
+Visualmente, el flujo sería:
+Componente/Servicio → HttpInterceptor → Servidor → HttpInterceptor → Componente/Servicio
+Por qué evita duplicación de código
+
+Al centralizar operaciones repetitivas, como:
+
+Agregar tokens de autorización a cada petición
+
+Registrar logs de solicitudes y respuestas
+
+Manejar errores globales
+
+los interceptores permiten no repetir esta lógica en cada servicio. Esto reduce errores, mejora la mantenibilidad y hace el código más limpio y coherente.
