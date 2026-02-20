@@ -1,1 +1,31 @@
-<p>sidebar works!</p>
+<aside class="w-64 bg-slate-800 border-r border-slate-700 p-6 h-screen sticky top-0">
+
+  <h2 class="text-xl font-bold mb-6">Mi App</h2>
+
+  <nav class="space-y-3">
+    <a routerLink="/home" class="block hover:text-amber-400 flex items-center gap-3">
+        <span class="material-symbols-outlined">home</span> 
+        <span> HOME</span>
+    </a>
+    <a routerLink="/products" class="block hover:text-amber-400 flex items-center gap-3">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span>Productos</span>
+    </a>
+    <a routerLink="/me" class="block hover:text-amber-400 flex items-center gap-3">
+        <span class="material-symbols-outlined">person</span>
+        <span>Mi perfil</span>
+    </a>
+    <a *ngIf="isAdmin" routerLink="/admin" class="block hover:text-amber-400 flex items-center gap-3">
+        <span class="material-symbols-outlined">admin_panel_settings</span>
+        <span>Admin</span>
+    </a>
+  </nav>
+
+  <button
+    (click)="logout()"
+    class="mt-10 w-full bg-red-500 hover:bg-red-400 text-slate-900 font-semibold py-2 rounded"
+  >
+    Cerrar sesión
+  </button>
+
+</aside>

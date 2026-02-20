@@ -1,1 +1,19 @@
-<p>me works!</p>
+<h1 class="text-3xl font-bold mb-6">Mi Perfil</h1>
+<div *ngIf="me; else loading"
+     class="max-w-lg bg-slate-800 p-6 rounded-lg shadow mx-auto">
+  <p class="mb-2">
+    <span class="font-semibold text-amber-400">ID:</span> {{ me.id }}
+  </p>
+  <p class="mb-2">
+    <span class="font-semibold text-amber-400">Nombre:</span> {{ me.name }}
+  </p>
+  <p class="mb-2">
+    <span class="font-semibold text-amber-400">Email:</span> {{ me.email }}
+  </p>
+  <p class="mb-2">
+    <span class="font-semibold text-amber-400">Rol:</span> {{ me.role }}
+  </p>
+</div>
+<ng-template #loading>
+  <p class="text-slate-300">Cargando datos...</p>
+</ng-template>

@@ -1,1 +1,31 @@
-<p>unauthorized401 works!</p>
+<div class="min-h-screen flex flex-col items-center justify-center bg-slate-900 text-slate-100 px-4">
+  <div class="max-w-md w-full text-center">
+    <p class="text-sm font-semibold text-red-400 tracking-wide uppercase mb-2">
+      Error 401
+    </p>
+
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">
+      Sesión caducada
+    </h1>
+
+    <p class="text-slate-300 mb-8">
+      Tu sesión ha expirado o no has iniciado sesión.  
+      Por favor vuelve a acceder para continuar.
+    </p>
+
+    <button
+      (click)="goToLogin()"
+      class="inline-flex items-center justify-center px-5 py-2.5 rounded-md
+             bg-red-500 text-slate-900 font-medium shadow-sm
+             hover:bg-red-400 focus:outline-none focus:ring-2
+             focus:ring-offset-2 focus:ring-red-400 focus:ring-offset-slate-900
+             transition-colors"
+    >
+      Ir a login
+    </button>
+
+    <div class="mt-8 text-xs text-slate-500">
+      Código: <span class="font-mono">401 Unauthorized</span>
+    </div>
+  </div>
+</div>

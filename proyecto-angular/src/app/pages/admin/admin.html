@@ -1,1 +1,17 @@
-<p>admin works!</p>
+<h1 class="text-3xl font-bold mb-6">Zona Administrativa</h1>
+<div *ngIf="adminInfo; else errorBlock"
+     class="bg-slate-800 p-6 rounded-lg shadow max-w-xl mx-auto">
+  <p class="mb-3">
+    <span class="font-semibold text-amber-400">Mensaje:</span>
+    {{ adminInfo.message }}
+  </p>
+  <p>
+    <span class="font-semibold text-amber-400">Hora del servidor:</span>
+    {{ adminInfo.serverTime }}
+  </p>
+</div>
+<ng-template #errorBlock>
+  <p class="text-red-500 font-semibold text-center">
+    {{ error }}
+  </p>
+</ng-template>
